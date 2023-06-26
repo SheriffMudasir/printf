@@ -22,6 +22,7 @@ int process_format(va_list arg, char specifier)
 		case 's':
 		{
 			char *str = va_arg(arg, char *);
+
 			if (str == NULL)
 				str = "(null)";
 			while (*str)
@@ -46,6 +47,5 @@ int process_format(va_list arg, char specifier)
 			count += 2;
 			break;
 	}
-
-	return count;
+	return (count);
 }

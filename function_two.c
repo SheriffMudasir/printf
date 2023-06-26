@@ -40,6 +40,5 @@ int print_decimal(va_list arg)
 		value %= divide;
 		divide /= 10;
 	}
-
-	return count;
+	return (count);
 }
